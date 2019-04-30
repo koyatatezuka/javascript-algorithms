@@ -1,4 +1,4 @@
-const { findEmailDomain } = require('./index');
+const { findEmailDomain, pow } = require('./index');
 
 describe('Random tests for functions', () => {
 	// email
@@ -8,4 +8,11 @@ describe('Random tests for functions', () => {
 
 		expect(result).toBe(expected);
 	});
+
+	test('.pow', () => {
+		const result = pow(2,4);
+		const expected = 16;
+
+		expect(result).toBe(expected)
+	})
 });
